@@ -45,7 +45,6 @@ public class CounterController {
       count = counter.get().getCount();
     }
 
-
     return ApiResponse.ok(count);
   }
 
