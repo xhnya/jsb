@@ -80,5 +80,10 @@ public class CounterController {
       return ApiResponse.error("参数action错误");
     }
   }
+
+  @GetMapping(value = "/api/test")
+  ApiResponse test() {
+    return ApiResponse.ok("测试成功，当前时间：" + LocalDateTime.now());
+  }
   
 }
